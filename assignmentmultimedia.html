@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Elements</title>
+</head>
+<body>
+<audio controls>
+    <source src="/home/deekshithaarya/Downloads/Aakashane Adarisuva[Kannadamp3.me].mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<br><br><br>
+<button style="background-color:green" onclick="playAudio()">Play Audio</button>
+<button style="background-color:red" onclick="pauseAudio()">Pause Audio</button>
+<br>
+<video width="600" height="700" controls>
+    <source src="/home/deekshithaarya/Downloads/WhatsApp Video 2024-02-13 at 6.54.26 PM.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<br><br><br>
+<button style="background-color:green"onclick="playVideo()">Play Video</button>
+<button style="background-color:red" onclick="pauseVideo()">Pause Video</button>
+<script>
+    const audioElement = document.querySelector('audio');
+    const videoElement = document.querySelector('video');
+
+    function playAudio() {
+        audioElement.play();
+    }
+
+    function pauseAudio() {
+        audioElement.pause();
+    }
+
+    function playVideo() {
+        videoElement.play();
+    }
+
+    function pauseVideo() {
+        videoElement.pause();
+    }
+</script>
+
+</body>
+</html>
